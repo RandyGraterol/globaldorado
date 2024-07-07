@@ -1,0 +1,62 @@
+@media (max-width: 767px) {
+	.imagen{
+			width:100% !important;
+			height:50vh !important;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image:url('https://static.wixstatic.com/media/e04518_4d1208e825d6497697960ee4c4303ba0~mv2.jpg/v1/crop/x_0,y_539,w_6000,h_1934/fill/w_977,h_315,al_c,q_90,enc_auto/Dise%C3%B1o%20logo%201%20(Historia%20de%20Instagram)%20(6).jpg');
+            
+		}
+		.texto h2{
+			text-align: center;
+			width:90%;
+		}
+		.texto button{
+			width:79% !important;
+		}
+		.comprobante{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+		
+		}
+		.comprobante div{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			width:80% !important;
+		
+		}
+		.comprobante div picture{
+			
+			width:70% !important;
+		
+		}
+		.comprobante div p{
+			
+			width:100% !important;
+
+		
+		}
+		.pieImg{
+			top:15rem !important;
+		}
+		.pagos{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height:120vh !important;
+			gap: 5rem !important;
+			padding-bottom: 2rem;
+			
+		}
+		.pagos .img-{
+			width:60% !important;
+		}
+}

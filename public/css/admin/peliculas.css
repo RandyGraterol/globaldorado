@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-image: url('/img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, .1);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, .6);
+    table-layout: fixed;
+    font-weight: bolder;
+
+}
+
+h1 {
+    color: rgb(255, 183, 67);
+    text-align: center;
+    z-index: 2;
+    font-style: italic;
+    font-size: 2.7rem;
+
+}
+
+.tablee {
+    overflow-x: auto;
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+}
+
+th {
+    color: rgb(255, 183, 67);
+    padding: 1rem;
+}
+
+th:nth-child(1) {
+    width: 5rem;
+}
+
+td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: .5rem;
+
+}
+
+td:nth-child(1) {
+    color: rgb(255, 183, 67);
+}
+
+th,
+td {
+    height: 15vh;
+    border-bottom: 1px solid white;
+}
+
+td:nth-child(2) {
+    height: 8rem;
+    width: 100%;
+}
+
+.descripcion {
+    max-height: 15vh !important;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.imgTable {
+    width: 10vw !important;
+    height: 10vw !important;
+    border-radius: 50% ;
+}
+
+/*------------BArra--------------------------------------------------*/
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, .8);
+    padding: 2.3rem;
+}
+
+.ulMenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+
+}
+
+.navMenu .ulMenu li .aMenu {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-style: unset;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.navMenu .ulMenu li .aMenu:hover {
+    text-decoration: none;
+    text-align: center;
+    color: rgba(255, 183, 67, .8);
+    font-style: unset;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: blink;
+    text-shadow: 7px 7px 50px rgb(255, 183, 67);
+}
+
+.imgLogo {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.divImgLogo {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    color: rgb(255, 183, 67);
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.imgAdd {
+    width: 30%;
+}
+
+.aAdd {
+    width: 1rem;
+}
+
+.imgMenuMobile {
+    width: 3rem;
+    cursor: pointer;
+
+}
+
+.formularioFiltro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+.formularioFiltro button {
+    width: 9%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .5rem;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+}
+
+.formularioFiltro button img {
+    width: 60%;
+}
+
+.formularioFiltro input {
+    width: 50%;
+    border-radius: 10px;
+    padding: .5rem;
+    margin-right: .5rem;
+    text-align: center;
+    font-size: 1rem !important;
+    height: auto !important;
+
+}
+
+
+@media screen and (min-width:1200px) {
+    
+    .formularioFiltro input {
+        width: 50%;
+        border-radius: 10px;
+        padding: .5rem;
+        margin-right: .5rem;
+        text-align: center;
+        font-size: 1vw !important;
+        height: auto !important;
+    
+    }
+    
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+@media only screen and (max-width:720px) {
+    .navMenu {
+        height: 13vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navMenu .ulMenu {
+        display: none;
+    }
+
+    .aAdd {
+        width: 2.5rem;
+    }
+
+    .imgTable {
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+    }
+
+    .divImgLogo div {
+        font-size: 2vw;
+    }
+
+    .formularioFiltro {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    table {
+        margin: 0 !important;
+        width: 100vw;
+        text-align: center;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, .6);
+        table-layout: fixed;
+        margin: 1rem;
+    }
+
+    .imgAdd {
+        width: 70% !important;
+    }
+
+    th {
+        padding: 0;
+    }
+
+    th:nth-child(1) {
+        width: 2vw;
+    }
+
+    th:last-child {
+        width: 50px;
+    }
+
+    .tablee {
+        width: 100%;
+        height: auto;
+        font-size: 2vw;
+    }
+
+    .divImgLogo {
+        display: none;
+    }
+
+    .imgLogo {
+        width: 20%;
+        border-radius: 50%;
+    }
+
+    .divMenuMobile {
+        display: inline-block;
+        width: 10%;
+    }
+
+    .imgMenuMobile {
+
+        height: 50px;
+    }
+
+    .formularioFiltro button img {
+        width: 40px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .tablee {
+       font-size: 2vw; /* ajusta el tamaño de fuente según la anchura de la pantalla */
+     }
+    .td {
+       font-size: 1.5vw; /* ajusta el tamaño de fuente según la anchura de la pantalla */
+     }
+    .descripcion {
+       font-size: 1.3vw; /* ajusta el tamaño de fuente según la anchura de la pantalla */
+     }
+    .icon td {
+       font-size: 1.5vw; /* ajusta el tamaño de fuente según la anchura de la pantalla */
+     }
+
+     .divImgLogo div {
+
+        font-size: 2.5vw;
+
+     }
+
+
+     .formularioFiltro input{
+        font-size: 50px;
+        height: 70px;
+
+     }
+
+     button img{
+        height: 70px;
+        width: auto !important;
+     }
+
+
+     .imgMenuMobile{
+
+        height: 70px;
+        width: auto;
+
+     }
+
+     img{
+
+        height: 70px !important;
+        width: 70px !important;
+
+     }
+
+   }

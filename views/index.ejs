@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<%-include('header')-%>
+<body>
+  <div style='overflow-x:hidden;'>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+          
+            <img class='imgLogoP' src="/template/icon/logoGlobal-Photoroom.png" alt="">
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img width='30' src='/icon/menu.png'></img>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#suscripcion">Suscripción</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#entretenimiento">Entretenimiento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#libros">Libros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/" target="_top">Salir</a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section position-relative" id='slider_section'>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row" >
+                <h1 id='title' class='fst-italic'>
+                </h1>
+                <div class="col-md-4 offset-md-2 botsito2">
+                  <div class="slider_detail-box">
+                    
+                    <p>
+                      BIENVENIDOS A GLOBAL DORADO, LAS OPORTUNIDADES ESTÁN A TU ALCANCE, ASÍ QUE APROVÉCHALAS AL MÁXIMO.
+                    </p>
+                    <div class="botsito">
+                      <a href="/login" class="btn-1">
+                        Acceder
+                      </a>
+                      <a href="/register" class="btn-2">
+                        Registrate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="roww">
+                <h1 class='title fst-italic'>
+                  Entretenimiento
+                </h1>
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <p>
+                      ¿Eres amante del cine? Te ofrecemos una selección de películas que se actualizan periódicamente. Puedes disfrutar de este servicio ilimitadamente, y nuestro equipo de soporte trabaja diariamente para mantener el catálogo actualizado en tu beneficio.
+                    </p>
+                    <div class="botsito">
+                      <a href="" class="btn-1" id='btn-02'>
+                        ver mas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="roww">
+                <h1 class='title fst-italic'>
+                 Cursos
+               </h1>
+               <div class="col-md-4 offset-md-2">
+                <div class="slider_detail-box">
+                  <p>
+                    Cursos EXCLUSIVOS
+                    En esta sección, tendrás acceso a una variedad de cursos impartidos por emprendedores destacados. Se trata de una recopilación de contenido diverso en un solo lugar. Es importante tener en cuenta que estos cursos ya han sido grabados y puedes elegir realizar aquellos que más te interesen.
+                  </p>
+                  <div class="botsito">
+                    <a href="" class="btn-1" id='btn-03'>
+                      Ver mas
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="slider_img-box">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid">
+            <div class="roww">
+              <h1 class='title fst-italic'>
+                Libros
+              </h1>
+              <div class="col-md-4 offset-md-2">
+                <div class="slider_detail-box">
+                  <p>
+                    Biblioteca Digital
+                    Para los apasionados de la lectura, contamos con una colección de más de 1000 libros digitales enfocados en desarrollo personal y crecimiento.
+                  </p>
+                  <div class="botsito">
+                    <a href="" class="btn-1" id='btn-04'>
+                      Ver mas
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="slider_img-box">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end slider section -->
+</div>
+
+
+<section id='iframeSaber'>
+  <div class='divIframe'>
+    <h2>¿QUIERES SABER <span>DE QUÉ TRATA?</span></h2>
+  </div>
+  <div class='textoSaber'>
+    <h2 style='text-align:center;'>¡TE <span>EXPLICO!</span></h2>
+    <p>Global Dorado es una plataforma que posee contenido de valor para ofrecer a sus usuarios una forma de educarse, entretenerse y al mismo tiempo la posibilidad de generar ganancias ofreciendo servicios STREAMING además todo esto desde la comodidad de tu casa y todo desde un mismo lugar.
+
+      Gracias a su contenido educativo como cursos y libros de crecimiento personal, tiene como intensión llevar información de alto valor a todos sus usuarios.
+    </p> 
+  </div>
+</section>
+<!-- about section -->
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="/img/ejecutivos.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="detail-box">
+          <h2 class="custom_heading">
+            Acerca de nuestra pagina web
+            <span style='color:rgb(255, 183, 67)'>
+              GlobalDorado
+            </span>
+          </h2>
+          <p>
+            Global Dorado es un sistema integral que brinda contenido enriquecedor, permitiendo a los usuarios aprender, divertirse y, simultáneamente, obtener ingresos a través de servicios de STREAMING. Todo esto accesible desde el confort del hogar y centralizado en una única plataforma.
+
+            Con su oferta educativa, que incluye cursos y literatura de desarrollo personal, Global Dorado aspira a distribuir conocimiento valioso entre sus miembros.
+          </p>
+          <div>
+            <a href="" class='btn-1' id="btn-1">
+              ver mas
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- service section -->
+<section class="service_section layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-2">
+        <h2 class="custom_heading">
+            objetivos <span style='color:rgb(255, 183, 67)'>Principales</span>
+        </h2>
+
+        <div class="container layout_padding2">
+          <div class="row">
+           
+           <p>Global Dorado se centra en tu diversión y aprendizaje, ofreciendo una cuidadosa selección de películas para el disfrute familiar en el hogar. Además, proporciona una variedad de cursos y lecturas enfocados en tu evolución y progreso personal, todo disponible en una sola plataforma.</p>
+            
+
+        </div>
+      </div>
+
+      <div>
+        <a href="" id="btn-2">
+          Ver mas
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="/img/televisor.png" alt="" class="w-100">
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- end service section -->
+
+<!--Carrusel start-->
+<div class='carrusel-p' id='carrusel-p'>
+  <h2 id='entretenimiento' class='h22'>Entretenimiento & <span style='color:rgb(255, 183, 67)'>Diversión</span></h2>
+
+  <div class='carrusel-list' id='carrusel-list'>
+   
+   <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+   onclick="app.processingButton(event)">
+   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+   class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 320 512">
+
+   <path fill="currentColor"
+   d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+ </path>
+</svg>
+</button>
+
+<div class='carrusel-track' id='track'>
+
+<% movies.forEach(pelicula =>{ %>
+  <div class='carrusel'>
+    <div>
+      <a href="/">
+        <!--<h4 class='h4'><small>Imagen</small>Mas</h4>-->
+        <picture>
+          <img src="<%-pelicula.portada%>" alt="imagen">
+        </picture>
+      </a>
+    </div>
+  </div>
+ <% }) %>
+
+
+
+</div>
+
+<button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+onclick="app.processingButton(event)">
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 320 512">
+<path fill="currentColor"
+d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+</path>
+</svg>
+</button>
+
+
+</div>
+
+</div>  
+
+<!-- gallery section -->
+<div class='carrusel-p' id='carrusel-pp'>
+  <h2 id='libros' class='h22'>Libros de<span style='color:rgb(255, 183, 67)'>Desarrollo</span> personal</h2>
+
+  <div class='carrusel-list' id='carrusel-list'>
+   
+   <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+   onclick="app.processingButton(event)">
+   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+   class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 320 512">
+
+   <path fill="currentColor"
+   d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+ </path>
+</svg>
+</button>
+
+<div class='carrusel-track' id='track'>
+
+<% book.forEach(libro =>{ %>
+  <div class='carrusel'>
+    <div>
+      <a href="/">
+        <!--<h4 class='h4'><small>Imagen</small>Mas</h4>-->
+        <picture>
+          <img class="img_box" src="<%-libro.portada%>" alt="imagen">
+        </picture>
+      </a>
+    </div>
+  </div>
+ <% }) %>
+
+
+
+</div>
+
+<button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+onclick="app.processingButton(event)">
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 320 512">
+<path fill="currentColor"
+d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+</path>
+</svg>
+</button>
+
+
+</div>
+
+</div> 
+
+<!-- hexagono-->
+
+<section id='sectionLogos'> 
+  <div class='div-padre'>
+    <div class='hexagon'></div>
+    <div class='hexagon'></div>
+    <div class='hexagon'></div>
+    <div class='hexagon'></div>
+    <div class='hexagon'></div>
+    <div class='hexagon'></div>
+    <div class='hexagon'></div>
+  </div>
+</section>
+
+<section class="client_section layout_padding-bottom">
+  <div class="container">
+    <h2 class="custom_heading text-center">
+      Comentarios
+      <span style='color:rgb(255, 183, 67)'>
+        Aportes
+      </span>
+    </h2>
+    <p class="text-center">
+      Sección dedicada a expresar y descubrir opiniones de nuestros usuarios
+    </p>
+    <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
+        <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="layout_padding2 pl-100">
+            <div class="client_container">
+              
+              <img class='img-perfil' src="/template/images/client.jpg" alt="">
+              
+              <div class="detail_box">
+                <h5>
+                  Sandy Mark
+                </h5>
+                <p>
+                  La variedad de cursos que ofrecemos es otra ventaja destacada de GlobalDorado. Contamos con cursos en una amplia gama de disciplinas, desde tecnología y negocios hasta arte y música, pasando por idiomas y desarrollo personal. Puedes explorar nuestro catálogo y encontrar el curso que se ajuste a tus intereses y objetivos personales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="layout_padding2 pl-100">
+            <div class="client_container ">
+              
+              <img class='img-perfil' src="/img/PP.jpeg" alt="">
+              
+              <div class="detail_box">
+                <h5>
+                  Daniel Montilla
+                </h5>
+                <p>
+                  GlobalDorado me brinda una plataforma intuitiva y fácil de usar para conectar con clientes interesados en pantallas de streaming. La plataforma proporciona una amplia gama de funciones y herramientas que me han permitido mostrar mis productos de manera efectiva y alcanzar a un público global.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="layout_padding2 pl-100">
+            <div class="client_container ">
+
+              <img class='img-perfil' src="/img/PPPP.jpeg" alt="">
+
+              <div class="detail_box">
+                <h5>
+                  Moisés Zerpa
+                </h5>
+                <p>
+                  Con Global Dorado, tengo todo en un solo lugar y la calidad es insuperable. Además, se puede generar ingresos adicionales gracias a su intuitivo sistema de afiliados. ¡La recomiendo totalmente!”.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<!-- end info_section -->
+<section class="informacion">
+
+ <div class="LWT">
+  <img title="theglobaldorado.com" width="50" src="/template/images/location-blue.png">
+  <a href="https://wa.me/qr/TZL245F365O5P1"><img width="50" src="/template/images/whatsapp.png"></a>
+  <a href="https://t.me/+dUcjB1pXQ08yY2Rh"><img width="50" src="/template/images/telegrama.png"></a>
+</div>
+
+  <div class="divInformacion">
+    <h2>¡INFORMACIÓN IMPORTANTE!</h2>
+  </div>
+
+  <div class="divInformacionText">
+    <p>El cobro de este artículo no es por el contenido, sino por la facilidad de brindarlo. Recuerda que el contenido que se ofrece en la <span style="color:red">PLATAFORMA ES DE LIBRE CIRCULACIÓN EN INTERNET</span>, por lo cual no se está infringiendo en la violación a los derechos de autor. Lo que se ofrece es una recopilación y organización de diferentes archivos para hacer llegar al comprador de manera fácil y organizada.</p>
+  </div>
+
+</section>
+
+<!-- footer section -->
+<section class="container-fluid footer_section">
+  <p style='color:rgb(255, 183, 67)'>
+    &copy; 2024 All Rights Reserved By
+    <a style='color:rgb(255, 183, 67)' href="#">GlobalDorado</a>
+  </p>
+</section>
+<!-- footer section -->
+<script type="text/javascript" src='/js/desplazamiento.js'></script>
+<script type="text/javascript" src="/template/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/template/js/bootstrap.js"></script>
+<script type="text/javascript" src='/js/efectWrite.js'></script>
+<script type="text/javascript" src='/js/carrusel.js'></script>
+<script type="text/javascript" src='/js/insertIframe.js'></script>
+<script type="text/javascript" src='/js/contacto.js'></script>
+<!-- end google map js -->
+</div>
+</body>
+
+</html>

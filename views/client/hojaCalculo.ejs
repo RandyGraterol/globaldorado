@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/client/hoja.css">
+	<link rel="stylesheet" type="text/css" href="/css/client/responsiveStreaming.css">
+	<link rel="stylesheet" type="text/css" href="/css/client/responsiveHoja.css">
+	<link rel="stylesheet" type="text/css" href="/css/julian.css">
+	<link rel="stylesheet" type="text/css" href="/css/julian2.css">
+	<title>
+		<%=tabla%>
+	</title>
+	<style type="text/css">
+		.main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			position: absolute;
+			z-index: 2; 
+			width: 100%;
+			
+
+		}
+
+		h2 {
+			color: white;
+		}
+
+		.intro {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			color: white;
+		}
+
+		.intro h1 {
+			margin: 2.5rem auto;
+			text-align: center;
+			width: 90%;
+		}
+
+		.intro p {
+			text-align: center;
+			width: 70%;
+			margin-bottom: 2rem;
+		}
+
+		.insertIframeHojaCalculo {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			top: 25rem;
+			gap: 2rem;
+			width: 100%;
+			height: auto;
+		}
+
+		.iframeHoja {
+			width: 90%;
+			height: 50vw;
+			font-size: 9%;
+		}
+
+		.hojaBtn {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+		}
+
+		.hojaBtn button {
+			width: 25%;
+			height: 9vh;
+			font-size: 1.5rem;
+			border-radius: 10px;
+			cursor: pointer;
+			background: rgba(0, 0, 0, .5);
+			backdrop-filter: blur(5px);
+			color: white;
+			transition: transform 1s, box-shadow 1s;
+		}
+
+		.hojaBtn button:hover {
+			transform: translateY(-7px);
+			box-shadow: 10px 10px 100px rgb(255, 183, 67);
+		}
+	</style>
+</head>
+
+<body>
+	<%-include('navBar')-%>
+
+		<div class="main">
+			<div class="intro">
+				<h1>IMPORTANTE VER EL MANEJO DE LA HOJA DE CÁLCULO PARA QUE LLEVES EL CONTROL DE TUS CLIENTES</h1>
+				<p>Para llevar un buen control de tus clientes es importante que aprendas como usar la hoja de cálculo,
+					es sencillo y debes ponerlo en practica para realizar dicho cobro mensual de cada cliente una vez
+					finalice tu tiempo de servicio con la pantalla.</p>
+			</div>
+
+
+			<div class="insertIframeHojaCalculo">
+
+			</div>
+
+			<div class='hojaBtn'>
+				<h2>CLIC EN HOJA DE CÁLCULO PARA DESCARGAR LA PLANTILLA</h2>
+				<button title="Ir a hoja de calculo">Hoja de calculo</button>
+			</div>
+		</div>
+
+		<script type="text/javascript" src='/js/insertIframeHoja.js'></script>
+</body>
+
+</html>

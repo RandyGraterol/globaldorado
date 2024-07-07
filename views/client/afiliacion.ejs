@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Afiliación</title>
+	<link rel="stylesheet" type="text/css" href="/css/client/afiliacion.css">
+	<link rel="stylesheet" type="text/css" href="/css/client/responsiveStreaming.css">
+	<link rel="stylesheet" type="text/css" href="/css/client/responsiveAfiliacion.css">
+	<style type="text/css">
+		.main{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+			position: absolute;
+			z-index:3;
+			width:100%;
+			gap:2rem;
+		}
+		.imagen{
+			width:100%;
+			height:80vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image:url('https://static.wixstatic.com/media/e04518_4d1208e825d6497697960ee4c4303ba0~mv2.jpg/v1/crop/x_0,y_539,w_6000,h_1934/fill/w_977,h_315,al_c,q_90,enc_auto/Dise%C3%B1o%20logo%201%20(Historia%20de%20Instagram)%20(6).jpg');
+		}	
+		.texto{
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap:2rem;
+		}
+		.texto h2{
+			font-size: 2rem;
+			color: wheat;
+			font-family: assistant-light,sans-serif;
+			font-weight: bold;
+		}
+		.texto p{
+			text-align: center;
+			font-size:1.2rem;
+			color:wheat;
+			width:90%;
+			font-family: assistant-light,sans-serif;
+			font-weight: bold;
+		}
+		.texto button{
+			width:35%;
+			height:7vh;
+			font-size:1.2rem;
+			font-weight: bold;
+			border-radius:15px;
+			background:rgba(0,0,0,.1);
+			backdrop-filter:blur(2px);
+			color:rgb(255, 183, 67);
+			cursor: pointer;
+			margin-top:1rem;
+			transition:transform 1s,box-shadow 1s;
+		}
+		.texto button:hover{
+			transform: translateY(-5px);
+			box-shadow:10px 10px 100px rgb(255, 183, 67);
+		}
+		.colorr{
+			color: rgb(255, 183, 67) !important;
+		}
+		.comprobante{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+		}
+		.comprobante div:nth-child(1){
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			gap:1rem;
+			width:40%;
+			height:70vh;
+		}
+		.comprobante div:nth-child(2){
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			gap:1rem;
+			width:40%;
+			height:70vh;
+		}
+		.comprobante div picture {
+			width:40%;
+		}
+		.comprobante div picture img{
+			width:100%;
+		}
+		.pieImg{
+			position: relative;
+			width:100%;
+			height:50vh;
+		}
+		.pieImg:before{
+			content:"";
+			position: absolute;
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			backdrop-filter:blur(3px);
+		}
+		.pagos{
+			position: absolute;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			gap:2rem;
+			width:100%;
+			height:100%;
+		}
+		.img-{
+			background-image:url('https://static.wixstatic.com/media/e04518_b7ca387f6d8e416b95af96c3624f2663~mv2.png/v1/crop/x_0,y_0,w_1563,h_1199/fill/w_206,h_158,al_c,q_95,enc_auto/3.png');
+			width:20%;
+			height:29vh;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+		.img-1{
+			background-image:url('https://static.wixstatic.com/media/e04518_935a92796ea14b17a67e15b85e4a7ada~mv2.png/v1/crop/x_0,y_0,w_1563,h_1381/fill/w_206,h_182,al_c,q_95,enc_auto/6.png');
+
+		}
+		.img-2{
+			background-image:url('https://static.wixstatic.com/media/e04518_b7ca387f6d8e416b95af96c3624f2663~mv2.png/v1/crop/x_0,y_0,w_1563,h_1199/fill/w_206,h_158,al_c,q_95,enc_auto/3.png');
+
+		}
+		.img-3{
+			background-image:url('https://static.wixstatic.com/media/e04518_aa086f5bcefe4fc0aaa9d7f21c269832~mv2.png/v1/crop/x_0,y_0,w_1563,h_1171/fill/w_206,h_155,al_c,q_95,enc_auto/5.png');
+
+		}
+		.img-4{
+			background-image:url('https://static.wixstatic.com/media/e04518_3b0e5e4166b5411bb64c86396cc82dd0~mv2.png/v1/crop/x_0,y_0,w_1563,h_1404/fill/w_206,h_185,al_c,q_95,enc_auto/8.png');
+
+		}
+	</style>
+</head>
+<body>
+	<%-include('navBar')-%>
+	<div class="main">
+
+		<div class="imagen">
+
+		</div>
+
+		<div class='texto'>
+			<h2>Afiliar a tu primer cliente</h2>
+			<p>
+				Debes ver este apartado una vez realices tu primera venta para que aprendas como puedes afiliar a tus clientes y le des ingreso a la plataforma.
+			</p>
+			<p>
+				Es sencillo, una vez el cliente te cancelé los 2$ o 3$ depende del país donde te encuentres, lo primero que harás es enviarle el registro, que es el siguiente, copia la plantilla completa para que la envíes.
+			</p>
+
+			<h2>PLANTILLA DE REGISTRO</h2>
+			<p>🎊 Gracias por unirte a nuestra comunidad 🥇🏆 GLOBALDORADO 💥
+
+				Te enviaré todo paso a paso para que aprendas y empieces a ganar dinero con nosotros ✅🚀
+
+				Paso 1️⃣ Ver el video de como registrarse en la plataforma de forma correcta. 
+
+				https://youtube.com/shorts/tV9AWh2-KSM?feature=share
+
+				Paso 2️⃣ Ingresar a la página de registro del sistema. 
+
+				www.theglobaldorado.com
+			</p>
+			<p>CUANDO YA TE HAYAS REGISTRADO, ENVIAME EL CAPTURE DE PANTALLA CON EL QUE TE REGISTRASTE EN LA PLATAFORMA PARA ENVIARLO A SOPORTE Y VALIDAR TU INGRESO AL SISTEMA</p>
+
+			<p class='colorr'>Una vez el cliente se registre, te enviará el correo con el que se registró en el sistema, una vez te lo envíe, contactas directamente a soporte para que te valide el correo de tu nuevo socio, acá te dejaré el número de soporte y sus medios de pago.</p>
+
+			<p class='colorr'>IMPORTANTE, DEBES UNIRTE AL GRUPO DE VALIDACIONES ÚNICAMENTE CUANDO HAGAS TU PRIMERA VENTA, YA QUE ES UN GRUPO DE VALIDACIONES, A LOS DEMÁS GRUPOS SI PUEDES UNIRTE.</p>
+
+			<button>Validaciones Telegram</button>
+
+			<p class='colorr'>Envíale el correo a afiliar + el comprobante de pago, te enviará el método de pago para que realices el pago de 0.50$ depende de la venta que hayas realizado.</p>
+			<p class='colorr'>RECUERDA QUE LA VALIDACIÓN DE CORREOS TIENE UN PROMEDIO DE DURACIÓN DE 2 A 24 HORAS PARA APROBAR, YA QUE SOMOS MUCHOS SOCIOS VALIDANDO CORREOS, TE RECOMENDAMOS TENER PACIENCIA PORQUE SE ATIENDE POR ORDEN DE LLEGADA...</p>
+			<div class='comprobante'>
+
+				<div>
+				<picture><img src="https://static.wixstatic.com/media/e04518_9d317f6bd424478298047ed9ac36068c~mv2.jpeg/v1/fill/w_141,h_245,al_c,q_90,enc_auto/photo1688707685.jpeg"></picture>
+				<p>SOLO ENVÍAS LA FOTO DEL PAGO A SOPORTE  + EL CORREO DE TU CLIENTE.</p>
+				</div>
+
+				<div>
+				<picture><img src="https://static.wixstatic.com/media/e04518_9d317f6bd424478298047ed9ac36068c~mv2.jpeg/v1/fill/w_141,h_245,al_c,q_90,enc_auto/photo1688707685.jpeg"></picture>
+				<p>UNA VEZ TE APRUEBE EL CORREO TE DARÁS CUENTA POR QUÉ REACCIONARÁ CON UNA MANITO ARRIBA ALLÍ YA TU CLIENTE TIENE EL CORREO APROBADO.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class='pieImg'>
+			<div class='pagos'>
+				<div class='img-1 img-'>
+					
+				</div>
+				<div class='img-2 img-'>
+					
+				</div>
+				<div class='img-3 img-'>
+					
+				</div>
+				<div class='img-4 img-'>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

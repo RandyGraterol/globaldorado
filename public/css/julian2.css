@@ -1,0 +1,238 @@
+@media screen and (min-width:1200px) {
+    
+    
+    .footerCapacitacion .div1, .div3{
+    
+        width: 30vw !important;
+    
+    }
+    
+    .footerCapacitacion .div1 h3{
+    
+    font-size: 3vw;
+    
+    }
+    
+    .footerCapacitacion .div1 p , .div3 p{
+    
+    font-size: 1vw;
+    
+    }
+    
+    .footerCapacitacion .div3 h4{
+    
+        font-size: 2vw;
+    
+    }
+
+    .pieCapacitacion{
+
+        max-width: 900px;
+
+    }
+    
+    .div3 form {
+    
+        height: 50px;
+    
+    }
+    
+    .pie{
+    
+    height: 90px;
+    
+    }
+    
+    .pie p{
+    
+        font-size: 30px;
+    
+    }
+
+
+    
+    .secciones h2 {
+
+      text-align: center !important;
+      margin: 0px;
+    }
+
+
+    .secciones h2 a{
+
+        font-size: 1.5vw !important;
+
+    }
+
+    .secciones p{
+
+        font-size: 1.2vw !important;
+        
+    }
+    .mensaje p{
+        
+        font-size: 35px;
+    }
+
+    .descripcion-nombre{
+
+        min-height: 330px;
+
+    }
+
+    .descripcion-nombre h2{
+
+        font-size: 2vw;
+
+    }
+
+    
+    .descripcion-nombre p{
+
+        font-size: 1vw;
+
+    }
+
+    .imagenFooter{
+        width:30vw;
+        height: max-content !important;
+      
+      }
+
+      .row{
+        width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+      }
+
+
+      #Fcontainer{
+        
+        padding: 0px;
+        margin: auto;
+
+      }
+
+      .footer-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .div3 h4{
+        font-size: 2vw !important;
+      }
+
+      .div1{
+        width: 30vw !important;
+      }
+
+      .footer-info{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-left: 35%;
+      }
+
+
+      .footer-info p{
+        width: 100%;
+        font-size: .7vw !important;
+        text-align: justify;
+
+      }
+
+      .footer-info h3{
+        width: 100%;
+        font-size: 2vw !important;
+
+      }
+
+      .div1, .div3{
+
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .div3{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .intro p{
+
+        font-size: 1.3vw;
+
+      }
+
+      .intro h1{
+
+        font-size: 2.3vw;
+
+      }
+
+      .social-links{
+        width: 100%;
+      }
+
+
+      #footer .footer-top .social-links a {
+        font-size: 2vw;
+        display: inline-block;
+        background: #292929;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 4px;
+        text-align: center;
+        width: 15%;
+        height: auto;
+        transition: 0.3s;
+    }
+
+
+
+    
+
+}
+
+
+
+
+
+@media screen and (min-width:1600px) {
+  
+
+  .secciones h2 a{
+
+    font-size: 1.2vw !important;
+
+  }
+
+  .secciones p {
+    width: 98%;
+    font-size: 1.1vw !important;
+}
+
+
+
+
+
+
+
+
+}
+
+#pelisp{
+
+
+  max-height: 30% !important;
+  overflow-y: scroll !important;
+}
+
+
