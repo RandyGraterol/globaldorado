@@ -1,0 +1,2 @@
+# globaldorado
+hard
