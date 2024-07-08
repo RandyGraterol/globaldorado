@@ -342,19 +342,32 @@
   }
 
  .logoo{
-    width:60%;
+  width: 15vw;
+  margin-bottom: .9rem;
+  height: auto;
+  margin-left: 2rem;
   }
-  .divLogoo{
-    height:20vh;
-    z-index:2;
-    display:flex !important;
-    justify-content:start;
-    align-items: center !important;
-    width: 30%;
-    margin-left:4rem;
-
-
-  }
+    .ulMenu {
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:1rem;
+      width: 90%;
+      margin: .8rem;
+      padding: .5rem;
+    }
+  .divLogoo {
+      z-index: 2;
+      background-image: url('/template/icon/logoGlobal-Photoroom.png');
+      background-size: cover;
+      background-position: center center;
+      display: flex !important;
+      justify-content: center;
+      align-items: center !important;
+      width:15%;
+      height:16vh;
+    }
   .h1-logoo {
     display: flex;
     justify-content: center;
@@ -381,18 +394,6 @@
   }
 
  
-
-  .ulMenu {
-
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: .8rem;
-    padding: .5rem;
-
-  }
 
   .ulMenu li {
     list-style: none;

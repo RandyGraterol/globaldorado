@@ -167,6 +167,33 @@ h6 {
   color:white;
 }
 
+@media screen and (max-width:767px){
+
+  .StreamingIMG{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+
+  .cajaHorizontal{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .cajaHorizontal:nth-child(2){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .cajaHorizontal:nth-child(4){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+
 .cajaHorizontal DIV h4, .cajaHorizontal div p{
 
   font-size: 1vw !important;
@@ -286,7 +313,7 @@ margin:.5rem;
 .logoo{
   width:15vw;
   margin-bottom: .9rem;
-  height:20vh !important;
+  height:auto;
   margin-left: 2rem;
 }
 
@@ -319,7 +346,7 @@ justify-content: center;
 }
 #header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 @media only screen and (max-width: 480px){
@@ -471,7 +498,7 @@ display:none;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 19px;
+  font-size: 1.5vw;
   font-weight: 600;
   color: #fff;
   white-space: nowrap;
@@ -580,6 +607,13 @@ display:none;
   }
 }
 
+.menuN{
+/*
+  margin-left: 75vw;
+*/
+}
+
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -606,7 +640,7 @@ display:none;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background: rgba(0, 0, 0, 0.9);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -615,7 +649,7 @@ display:none;
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #151515;
+  color: #ffc451;
 }
 
 .navbar-mobile a:hover,
@@ -1863,6 +1897,37 @@ font-size: 1.4vw !important;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
+
+}
+
+@media (max-width: 767px) {
+
+
+
+  #footer .footer-top .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    text-align: center;
+
+  }
+
+  .social-links{
+    text-align: center;
+  }
+
 }
 
 #footer .footer-top .footer-info h3 span {

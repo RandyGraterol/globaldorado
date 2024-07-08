@@ -20,6 +20,11 @@
    width: 100%;
    height:30vh;
   }
+
+  .navbarr{
+    display: none !important;
+  }
+
   #carrusel-p{
   position: relative;
   display:flex;
@@ -27,8 +32,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height:70vh;
-  margin:1rem auto;
+  height:30vh;
+  margin-top:1rem;
   background-image:url('https://p4.wallpaperbetter.com/wallpaper/336/163/715/honeycombs-abstract-minimalism-simple-background-wallpaper-preview.jpg');
   background-size: cover;
   background-position: center center;
@@ -39,30 +44,51 @@
   justify-content: center;
   align-items: center;
   width:fit-content;/*?????*/
-  height:auto;
+  height:100%;
   margin:0 auto;
   width:100%;
   overflow: hidden;
-  
+  padding: 0px !important;
 }
+
+.carrusel{
+  width: auto;
+  height: auto;
+}
+
+.carrusel div picture {
+  margin: 0px;
+}
+
+
 .carrusel-track{
-  position:relative;
-  top:7rem;
+
   left:0;
   display:flex;
   justify-content: center;
   gap:3rem;
   transition:.5s ease-in-out;
 }
+
+.carrusel div:nth-child(1) {
+
+  height: 20vw;
+  width: 20vw;
+
+
+}
+
+
 .carrusel div:nth-child(1) picture img{
-height:30vh;
-width:100%;
+height:20vw;
+width:20vw;
 }
 .container .boton{
  width:100%;
 }
 .container .boton .botonIcon{
   width:100%;
+  min-width: 100px !important;
   height:9vh;
   display:flex;
   flex-direction: column;
@@ -101,12 +127,14 @@ width:100%;
 
   
   #navbarrr div picture img{
-  width:60%;
+  width:100%;
+  min-width: 30px !important;
   }
   #navbarrr div picture{
   display:flex;
   justify-content:center;
   width:70%;
+  min-width: 30px !important;
 
   }
    #navbarrr div h1{
@@ -158,10 +186,13 @@ width:100%;
         text-decoration:none;     
   }
   #navbarrr .menu li:hover .subMenu{
-    display:block;
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
     position:absolute;
-    width:102vw;
-    transform:translateX(-19rem) translateY(14px);
+    width:100vw;
+    margin-left: -86.5vw;
     background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }
@@ -192,7 +223,7 @@ width:100%;
     position: absolute;
     content:"";
     width:100%;
-    height:500vh;
+    height:100%;
     top:0;
     left:0;
     backdrop-filter: blur(7px);
@@ -204,19 +235,99 @@ width:100%;
   align-items: center;
   position: absolute;
   width:100%;
-  height: 65%;
-  top:235rem;
+  height: fit-content;
   z-index: 3;
   color:white;
   background:rgb(0,0,0);
   
   }
+
+
+  .container p{
+
+    font-size: 3vw;
+
+  }
+
+  .h1CC{
+    margin: 2vw;
+    font-size: 5vw;
+
+
+  }
+
+
   .pie p{
   text-align: center;
+  font-size: 3.3vw !important;
+  padding: 5px;
  
   }
 
 }
+
+
+@media screen and (min-width:410px) and (max-width:500px) {
+
+  #navbarrr .menu li:hover .subMenu{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position:absolute;
+    width:100vw;
+    margin-left: -85vw !important;
+    background:rgba(0,0,0,1);
+    backdrop-filter:blur(10px);
+  }
+  
+  
+}
+
+
+
+
+@media screen and (min-width:500px) and (max-width:642px) {
+
+  #navbarrr .menu li:hover .subMenu{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position:absolute;
+    width:100vw;
+    margin-left: -84.3vw !important;
+    background:rgba(0,0,0,1);
+    backdrop-filter:blur(10px);
+  }
+  
+  
+}
+
+
+
+
+@media screen and (min-width:642px) and (max-width:767px) {
+
+  #navbarrr .menu li:hover .subMenu{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position:absolute;
+    width:100vw;
+    margin-left: -83.3vw !important;
+    background:rgba(0,0,0,1);
+    backdrop-filter:blur(10px);
+  }
+  
+  
+}
+
+
+
+
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Estilos para dispositivos móviles de resolución mediana */
