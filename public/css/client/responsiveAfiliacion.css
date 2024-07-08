@@ -1,0 +1,76 @@
+@media (max-width: 767px) {
+	.imagen{
+			width:100% !important;
+			height:50vh !important;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			
+            
+		}
+		.texto h2{
+			text-align: center;
+			width:90%;
+		}
+		.texto button{
+			width:79% !important;
+		}
+		.comprobante{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+		
+		}
+		.comprobante div{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			width:80% !important;
+		
+		}
+		.comprobante div picture{
+			
+			width:70% !important;
+		
+		}
+		.comprobante div p{
+			
+			width:100% !important;
+
+		
+		}
+		.pieImg{
+			top:15rem !important;
+		}
+		.pagos{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height:120vh !important;
+			gap: 5rem !important;
+			padding-bottom: 2rem;	
+		}
+		.pagos .img-{
+			width:50% !important;
+		}
+.transfondo{
+ position:relative;
+ width:100%;
+ height:auto; 
+}
+.transfondo:before{
+ position:absolute;
+ content:"";
+ width:100%;
+ height:590vh;
+ top:0;
+ left:0;
+ backdrop-filter: blur(7px);
+ background:rgba(0,0,0,.3);
+}
+}

@@ -1,0 +1,80 @@
+.acceder{
+	position:relative;
+	height:7px;
+	line-height:5px;
+	margin-top:1rem;
+	border-radius:5px;
+	transition:all 1s;
+	border:none;
+	font-weight:bold;
+	font-family:'calibri';
+}
+.acceder:nth-child(1){
+	margin-left:1.5rem;
+}
+.acceder:nth-child(2){
+	margin-left:1rem;
+}
+.acceder:hover{
+    background:rgba(0,0,0,.1);
+    backdrop-filter:blur(3px);
+    box-shadow:2px 2px 50px rgb(255, 183, 67);
+    color:rgb(255, 183, 67);
+}
+.restablecer-registro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: .1rem;
+	width:500px;
+}
+.restablecer-registro-interno{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.restablecer-registro .restablecer-registro-interno a{
+	text-decoration: none;
+	color:white;
+	transition:all 1s;
+}
+.restablecer-registro .restablecer-registro-interno a:hover{
+	color:rgb(255, 183, 67);
+
+}
+
+.botones{
+	position:relative;
+	display:flex;
+	justify-content:start;
+	align-items: center;
+    margin-top:.2rem;
+}
+.h11{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	width:500px;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.g-recaptcha{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin-top:1rem;
+}
+#contactForm{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:-40px;
+	width:500px;
+}
+
+.textoRestablecer p{
+ text-align: center;
+ margin-top:2rem;
+}

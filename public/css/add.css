@@ -1,0 +1,88 @@
+
+         input[type="file"] {
+      display: none;
+    }
+
+    .input-file {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #f0f0f0;
+      color: #333;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left:1.5rem
+    }
+
+    .input-file:focus {
+      outline: none;
+    }
+
+    .input-file::after {
+      content: attr(data-label);
+      display: block;
+      padding-top: 4px;
+      color: #999;
+      font-size: 12px;
+    }
+    .addImagen{
+        display:flex;
+        flex-direction: column;
+        justify-content:start;
+        align-items: start;
+    }
+    #formulario{
+        height: auto;
+        width: auto;
+    }
+    .addImagen{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .divisionesFormulario{
+        margin:.5rem;
+        width:100%;
+    }
+     .divisionesFormulario:nth-child(5){
+      margin-top: 1rem;
+      display:flex;
+      justify-content:start;
+      align-items: center;
+    }
+
+     .divisionesFormulario:nth-child(6) button{
+     padding:.5rem;
+     width:30%;
+     border-radius: 10px;
+     transition: all 1s;
+
+    
+    }
+    .divisionesFormulario:nth-child(6) button:hover{
+    transform: translateY(-5px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(0,0,0,.2);
+    box-shadow:10px 10px 100px rgb(255, 183, 67);
+    color:rgb(255, 183, 67);
+    }
+     .divisionesFormulario:nth-child(6) button:nth-child(2){
+     margin-left:1rem;
+    }
+     .divisionesFormulario:nth-child(6) button:nth-child(2) a:hover{
+     color:rgb(255, 183, 67);
+    }
+    .divisionesFormulario input{
+        width: 100%;
+        border-radius:10px;
+        padding:.5rem;
+    }
+     #categoria{
+        padding:.5rem;
+        border-radius:10px;
+        cursor: pointer;
+     }
+     .volverA{
+        color:black;
+     }

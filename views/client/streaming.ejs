@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><%=tabla%></title>
+	<link rel="stylesheet" type="text/css" href="/css/client/streaming.css">
+      <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+     <link rel="stylesheet" type="text/css" href="/css/client/carruselStreaming.css">
+     <link rel="stylesheet" type="text/css" href="/css/client/responsiveStreaming.css">
+     <link rel="stylesheet" type="text/css" href="/css/julian2.css">
+
+
+     <style>
+
+.ulMenu {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: .8rem;
+    padding: .5rem;
+}
+
+.ulMenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8vw;
+    font-family: cursive;
+}
+
+.ulMenu li {
+    list-style: none;
+    margin: .7rem;
+}
+
+#navbarr {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/336/163/715/honeycombs-abstract-minimalism-simple-background-wallpaper-preview.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1rem;
+}
+
+picture img{
+
+  width: 45%;
+
+}
+
+.h1-logoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 3vw;
+    font-family: cursive;
+    color: white;
+}
+     </style>
+
+</head>
+
+<body>
+	<%-include('navBar')-%>
+
+	<div class='container'>
+
+		<h2 class="h1CC">¡Global Dorado Streaming!</h2>
+
+		<p>✅ Es importante a la hora de realizar cualquier pedido de pantalla NOTIFICAR DISPONIBILIDAD, pueden agotarse aunque trabajamos para mantener siempre SERVICIOS ACTIVOS, el horario para la atención de pedidos será de 10AM-10PM.</p>
+
+		<p>✅ La entrega del servicio tiene una duración de 15 minutos a 6hrs aproximadamente.</p>
+
+    <p>✅ Le pedimos un poco de paciencia, ya que trabajamos constante con el despacho de los servicios y las aprobaciones de nuevos ingresos.</p>
+
+		<p>
+			✅ Una vez aprobada su suscripción o despacho del servicio solicitado, le comunicaremos para su ingreso al servicio de STREAMING.
+		</p>
+
+		<picture>
+			<img src="https://static.wixstatic.com/media/e04518_18241936f13d46c7b255f392abb65103~mv2.jpg/v1/fill/w_524,h_333,al_c,q_90,enc_auto/e04518_18241936f13d46c7b255f392abb65103~mv2.jpg">
+			<img src="https://static.wixstatic.com/media/e04518_049a5c9126ee461882a110b5d9dafc83~mv2.jpg/v1/fill/w_534,h_333,al_c,q_90,enc_auto/e04518_049a5c9126ee461882a110b5d9dafc83~mv2.jpg">
+		</picture>
+
+		<p>
+			Con este apartado aprenderás a tener un ingreso adicional comercializando las pantallas, ya que tendrás 2 formas de generar dinero, 1 vendiendo la plataforma de PLATINIUM y 2 vendiendo los servicios STREAMING, ADICIONAL TE ENTREGAREMOS UNA HOJA DE EXCEL PARA QUE LLEVES EL CONTROL DE TUS CLIENTES PARA EL COBRO DE LAS MENSUALIDADES.
+		</p>
+
+		<h2 class="h1CC">PEDIDOS DE PANTALLAS</h2>
+
+		<p>Aquí te dejaremos todos los servicios a comercializar a un precio BAJO para que puedas aumentarle el valor según tu criterio, te recomendamos subirle al precio estipulado un estimado de 0,50$ -  1$ o un poco más. NO EXCEDER YA QUE HAY MUCHA COMPETENCIA EN EL MERCADO, LO QUE NOS CARACTERIZA ES NUESTRA CALIDAD DE SERVICIO.</p>
+
+		<p>
+			Para realizar el pedido solo das CLIC al botón de compra del servicio a vender, te redirigirá a nuestro número de soporte, allí te enviarán la información del precio a la tasa de cambio que esté en el momento, manejaremos PAGO MÓVIL, BINANCE, AIRTM, NEQUI COLOMBIA.
+		</p>
+
+		<h2 class="h1CC" style="color:rgb(255,64,64)">IMPORTANTE, EL NÚMERO DE SOPORTE DE LAS PANTALLAS ES SOLO PARA PANTALLAS, NO PARA AFILIACIONES.</h2>
+
+		<div class="boton">
+
+			<div class="botonIcon botonIconn" title="Haz click para ir al enlace">
+				<img class="logo-vectorizado" src="/template/icon/corona.png" alt="Logo Vectorizado"><span>Flyer Streaming</span>
+			</div>
+
+			<div class="botonIcon botonIconnn" title="Haz click para ir al enlace">
+				<img class="logo-vectorizado" src="/template/icon/corona.png" alt="Logo Vectorizado"><span>Hoja de Calculo</span>
+			</div>
+		
+		</div>
+
+		<!--Carrusel start-->
+<div class='carrusel-p' id='carrusel-p'>
+ 
+  <div class='carrusel-list' id='carrusel-list'>
+   
+   <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+   onclick="app.processingButton(event)">
+   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+   class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 320 512">
+
+   <path fill="currentColor"
+   d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+ </path>
+</svg>
+</button>
+
+<div class='carrusel-track' id='track'>
+
+  
+  <div class='carrusel'>
+
+    <div>
+        <picture>
+         <img src="/img/logos/disney.jpg" alt="imagen">
+        </picture>
+    </div>
+
+     <div>
+      <p style="color:white">1.3$ Pantalla</p>
+     </div>
+
+     <div class='telegram'>
+      <span>Comprar</span>
+     </div>
+
+  </div>
+
+  <div class='carrusel'>
+
+    <div>
+        <picture>
+         <img src="/img/logos/hbo.png" alt="imagen">
+        </picture>
+    </div>
+
+     <div>
+      <p style="color:white">1.3$ Pantalla</p>
+     </div>
+
+     <div class='telegram'>
+      <span>Comprar</span>
+     </div>
+
+  </div>
+
+  <div class='carrusel'>
+
+    <div>
+        <picture>
+         <img src="/img/logos/max.png" alt="imagen">
+        </picture>
+    </div>
+
+     <div>
+      <p style="color:white">1.3$ Pantalla</p>
+     </div>
+
+     <div class='telegram'>
+      <span>Comprar</span>
+     </div>
+
+  </div>
+
+  <div class='carrusel'>
+
+    <div>
+        <picture>
+         <img src="/img/logos/netflix.png" alt="imagen">
+        </picture>
+    </div>
+
+     <div>
+      <p style="color:white">1.3$ Pantalla</p>
+     </div>
+
+     <div class='telegram'>
+      <span>Comprar</span>
+     </div>
+
+  </div>
+
+  <div class='carrusel'>
+
+    <div>
+        <picture>
+         <img src="/img/logos/paramount.png" alt="imagen">
+        </picture>
+    </div>
+
+     <div>
+      <p style="color:white">1.3$ Pantalla</p>
+     </div>
+
+     <div class='telegram'>
+      <span>Comprar</span>
+     </div>
+
+  </div>
+
+  <div class='carrusel'>
+
+    <div>
+        <picture>
+         <img src="/img/logos/prime.png" alt="imagen">
+        </picture>
+    </div>
+
+     <div>
+      <p style="color:white">1.3$ Pantalla</p>
+     </div>
+
+     <div class='telegram'>
+      <span>Comprar</span>
+     </div>
+
+  </div>
+
+  <div class='carrusel'>
+
+    <div>
+        <picture>
+         <img src="/img/logos/spotify.png" alt="imagen">
+        </picture>
+    </div>
+
+     <div>
+      <p style="color:white">1.3$ Pantalla</p>
+     </div>
+
+     <div class='telegram'>
+      <span>Comprar</span>
+     </div>
+
+  </div>
+
+
+
+</div>
+
+<button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+onclick="app.processingButton(event)">
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 320 512">
+<path fill="currentColor"
+d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+</path>
+</svg>
+</button>
+
+
+</div>
+
+</div> 
+
+
+	</div>
+
+
+
+	<div class="pie">
+		<p>© Copyright <strong style="color:rgb(255, 183, 67)">GlobalDorado</strong> Todos los Derechos Reservados.</p>
+ </div>
+ <script type="text/javascript">
+   const telegram = document.querySelectorAll('.telegram');
+   
+   for(let x = 0 ; x < telegram.length;x++){
+    telegram[x].addEventListener('click',()=>{
+      window.location.href='https://t.me/+dUcjB1pXQ08yY2Rh';
+    });
+   }
+
+    const d = document.querySelector('.botonIconn');
+    d.addEventListener('click',()=>{
+    window.location.href='https://drive.google.com/drive/folders/1MBYeYMhyk7qZDb0qMHLH4Nub6rVUHH2i?usp=sharing';
+   })
+
+    const h = document.querySelector('.botonIconnn');
+    h.addEventListener('click',()=>{
+      window.location.href='/hojaCalculo'; 
+    });
+   
+ </script>
+<script type="text/javascript" src='/js/carruselStreaming.js'></script>
+</body>
+</html>

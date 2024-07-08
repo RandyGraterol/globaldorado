@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		<%=tabla%>
+	</title>
+	<script type="text/javascript" src="/js/alertConfig.js"></script>
+	<link rel="stylesheet" type="text/css" href="/templateMain/assets/css/mediaScreen.css">
+	<link href="/templateMain/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<!-- Vendor CSS Files -->
+	<link href="/templateMain/assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="/templateMain/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/templateMain/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="/templateMain/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="/templateMain/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="/templateMain/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+	<link href="/templateMain/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/template/icon/corona.png" />
+	<!-- Template Main CSS File -->
+	<link href="/templateMain/assets/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/navBar.css">
+	<link rel="stylesheet" type="text/css" href="/css/client/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/css/julian2.css">
+</head>
+
+<body>
+
+	<%-include("navBar")-%>
+	<% if(tabla=="Cursos" ) { %>
+	<div class="intro">
+		<h1>Cursos Varios</h1>
+		<p>En este apartado vas a tener acceso a diversos cursos donde aprenderás diferentes oficios de
+			diferentes emprendedores, es una recopilación de contenido para así tener todo en un mismo lugar, es
+			importante que tengas en claro que son cursos ya GRABADOS Y DE LIBRE CIRCULACIÓN EN INTERNET, puedes
+		elegir y realizar cualquiera.</p>
+	</div>
+	<% } %>
+	<% if(tabla=="Libros" ) { %>
+	<div class="intro">
+		<h1>Encuentra conocimiento en la lectura</h1>
+		<p>Para los amantes de la lectura tenemos un Pack de +1000 mil libros digitales de desarrollo y
+		crecimiento personal</p>
+	</div>
+	<% } %>
+	<section class='principall'>
+
+		<% movies.forEach(pelicula=>{%>
+		<div class='peliculaDiv' style="border-radius:20px;">
+			<img src="<%= pelicula.portada%>" class='imgPortada'>
+			<div class='descripcion-nombre'>
+				<h2>
+					<%= pelicula.nombre%>
+				</h2>
+				<p id="pelisp">
+					<%= pelicula.descripcion%>
+				</p>
+
+				<div class='fileUrl'>
+					<div><a class='a' href="<%=pelicula.UrlFile%>" target="_blank">Ver</a></div>
+					<div><a class='a' href="<%=pelicula.UrlFile%>" target="_blank">Descargar</a>
+					</div>
+				</div>
+
+				<div class="categoriaa">
+					<p>
+						<%=pelicula.categoria%>
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+		<% }) %>
+	</section>
+	<%-include('../footer')-%>
+	<script type="text/javascript" src="/js/puntuaciones.js"></script>
+	<script type="text/javascript">
+		"use strict";
+
+		let peliculas = document.querySelectorAll('.peliculaDiv');
+
+		peliculas.forEach(pelicula => {
+			let imgPortada = pelicula.querySelectorAll('.imgPortada');
+			let descripcionNombre = pelicula.querySelectorAll('.descripcion-nombre');
+									////////////////////////////////////////////////////////////////
+									pelicula.addEventListener("mouseover", function () {
+										// Código que se ejecuta cuando el mouse está sobre el elemento
+										for (let x = 0; x < imgPortada.length; x++) {
+											imgPortada[x].classList.add('position-img');
+											descripcionNombre[x].classList.add('position-descripcion-nombre');
+										}
+									});
+									////////////////////////////////////////////////////////////////
+									pelicula.addEventListener("mouseout", function () {
+										// Código que se ejecuta cuando el mouse sale del elemento
+										for (let z = 0; z < imgPortada.length; z++) {
+											imgPortada[z].classList.remove('position-img');
+											descripcionNombre[z].classList.remove('position-descripcion-nombre');
+										}
+									});
+									///////////////////////////////////////////////////////////////
+
+								});
+							</script>
+						</body>
+
+						</html>

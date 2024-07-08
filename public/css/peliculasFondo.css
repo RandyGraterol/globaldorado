@@ -1,0 +1,7 @@
+	body{
+		background-image:url('/img/entretenimiento.jpeg') !important;
+		background-position:center center;
+		background-size: cover;
+		background-attachment: fixed;
+		backdrop-filter:none !important;
+		}
