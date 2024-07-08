@@ -11,7 +11,7 @@ const cors = require('cors');
 const port = 5000;
 const app = express();
 
-// Configurar la caché para recursos estáticos
+// Configurar la caché para recursos estático
 const staticOptions = {
   maxAge: 30 * 24 * 60 * 60, // Tiempo de caché en segundos (30 días en este ejemplo)
 };
