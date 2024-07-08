@@ -7,9 +7,15 @@
 
 }
 .imgLogoP{
-  width:13%;
-  height:19vh;
+  width:15%;
+  height:auto;
 }
+
+
+
+
+
+
 #sectionLogos .div-padre{
   position:relative;
   display: flex;

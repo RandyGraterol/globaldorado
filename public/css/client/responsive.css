@@ -37,7 +37,7 @@
   }
 
   #navbarrr div picture img{
-  width:60%;
+  width:100%;
   }
   #navbarrr div picture{
   display:flex;
@@ -93,14 +93,16 @@
        	text-decoration:none;    	
   }
   #navbarrr .menu li:hover .subMenu{
-  	display:block;
-  	position:absolute;
-  	width:102vw;
-  	transform: translateX(-21rem) translateY(18px);
-  	background:rgba(0,0,0,1);
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position:absolute;
+    width:100vw;
+    margin-left: -83vw;
+    background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }
-  
  
   .footer-info{
   	display:flex;
@@ -132,6 +134,65 @@
   .intro h1{
     text-align: center;
   }
+}
+
+
+
+
+@media screen and (min-width:410px) and (max-width:500px) {
+
+  #navbarrr .menu li:hover .subMenu{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position:absolute;
+    width:100vw;
+    margin-left: -87vw !important;
+    background:rgba(0,0,0,1);
+    backdrop-filter:blur(10px);
+  }
+  
+  
+}
+
+
+@media screen and (min-width:500px) and (max-width:642px) {
+
+  #navbarrr .menu li:hover .subMenu{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position:absolute;
+    width:100vw;
+    margin-left: -88.5vw !important;
+    background:rgba(0,0,0,1);
+    backdrop-filter:blur(10px);
+  }
+  
+  
+}
+
+
+
+
+
+@media screen and (min-width:642px) and (max-width:767px) {
+
+  #navbarrr .menu li:hover .subMenu{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position:absolute;
+    width:100vw;
+    margin-left: -91vw !important;
+    background:rgba(0,0,0,1);
+    backdrop-filter:blur(10px);
+  }
+  
+  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
