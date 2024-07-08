@@ -12,6 +12,7 @@
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
     "express-recaptcha": "^5.1.0",
+    "express-session": "^1.18.0",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "lozad": "^1.16.0",

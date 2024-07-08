@@ -19,8 +19,7 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  padding-left:1rem ;
-  padding-right: 1rem;
+  padding:2rem;
 }
 #carrusel-p::before{
   content: "";
@@ -39,9 +38,8 @@
   width:fit-content;/*?????*/
   height:auto;
   margin:0 auto;
-  max-width: 100%;
+  max-width: 98vw;
   overflow: hidden;
-  padding: 3rem;
 }
 .carrusel-track{
   position:relative;
@@ -49,7 +47,7 @@
   left:0;
   display:flex;
   justify-content: center;
-  gap:3.33%;
+  gap:3rem;
   transition:.5s ease-in-out;
 }
 .carrusel{
@@ -86,35 +84,11 @@
  width:60%;
  background:rgb(255, 183, 67);
  backdrop-filter:blur(10px);
- padding:.2rem;
+ padding:.4rem;
  cursor:pointer;
  transition:transform 1s;
  
 }
-
-
-@media screen and (max-width:767px) {
-
-  
-.carrusel div:nth-child(3){
-  z-index:3;
- 
-  color:black;
-  font-size:1.5rem;
-  text-align: center;
-  border-radius:1.5rem;
-  width:100%;
-  background:rgb(255, 183, 67);
-  backdrop-filter:blur(10px);
-  padding:.2rem;
-  cursor:pointer;
-  transition:transform 1s;
-  font-size: 2.3vw;
- }
-  
-}
-
-
 .carrusel div:nth-child(3):hover{
  transform:translateY(-7px);
  box-shadow:10px 1px 100px rgb(255, 183, 67);
@@ -126,23 +100,6 @@ height:7vh;
 color:white;
 font-weight:bold;
 }
-
-
-@media screen and (max-width:767px) {
-  
-  .carrusel div:nth-child(2) p{
-
-    height: auto !important;
-    font-size: 2vw;
-    padding: 0px;
-    margin: 1.3vw;
-
-
-  }
-
-}
-
-
 .carrusel div picture{
  margin:.5rem auto;
  width:100%;
@@ -175,10 +132,10 @@ font-weight:bold;
 }
 @media(min-width:768px){
   .carrusel{
-    min-width: 250px ;
+    width: 275px;
   }
   .carrusel a img{
-    width: 200px;
+    width: 250px;
   }
 }
 

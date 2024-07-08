@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   Publicar
+  </title>
+  <link rel="stylesheet" type="text/css" href="/css/client/publicarFacebook.css">
+  <link rel="stylesheet" type="text/css" href="/css/client/responsiveCapacitacion.css">
+  <link rel="stylesheet" type="text/css" href="/css/julian2.css">
+  <style type="text/css">
+    .imgTop{
+      position: relative;
+      background-image:url('/img/flyers/inicio.jpeg');
+      width:100%;
+      height:50vh;
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .imgTop:before{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    backdrop-filter: blur(2px);
+    background:rgba(0,0,0,.3);
+
+    }
+    h1{
+       width:100%;
+       text-align: center;
+       color:rgb(255, 183, 67);
+       font-family: assistant-light,sans-serif;
+       font-weight: bold;
+       font-size:2.5rem;
+       z-index: 1;
+     }
+  </style>
+</head>
+
+<body>
+  <%-include('navBar')-%>
+
+    <div class='container'>
+     
+     <div class='imgTop'>
+       <h1>¡Como publicar en facebook!</h1>
+     </div>
+    
+      <div class='secciones'>
+        <picture>
+          <img src="/img/flyers/pgrupos.jpeg">
+        </picture>
+       
+          <a class='botonCapacitacion' href="#">Ir</a>
+      </div>
+
+      <div class='secciones'>
+        <picture>
+          <img src="/img/flyers/unirte.jpeg">
+        </picture>
+       
+        <a class='botonCapacitacion' href="#">Ir</a>
+      </div>
+
+      <div class='secciones'>
+        <picture>
+          <img src="/img/flyers/buscar.jpeg">
+        </picture>
+           <a class='botonCapacitacion' href="#">Ir</a>
+      </div>
+
+      <div class='secciones'>
+        <picture>
+          <img src="/img/flyers/trabajar.jpeg">
+        </picture>
+        
+         <a class='botonCapacitacion' href="#">Ir</a>
+      </div>
+
+      <div class='secciones'>
+        <picture>
+          <img src="/img/flyers/fly.jpeg">
+        </picture>
+         <a class='botonCapacitacion' href="#">Ir</a>
+      </div>
+
+      <div class='secciones'>
+        <picture>
+          <img src="/img/flyers/responder.jpeg">
+        </picture>
+        
+         <a class='botonCapacitacion' href="#">Ir</a>
+      </div>
+
+     
+    </div>
+
+    <div class="footerCapacitacion">
+
+      <div class="div1">
+
+        <h3>Global <span style="color:rgb(255, 183, 67)">Dorado</span></h3>
+        <p>
+          A108 San Juan Street <br>
+          NY 535022, Guárico<br><br>
+          <strong>Telefono:</strong> +58 000 000 000<br>
+          <strong>Correo:</strong> globalDorado@gmail.com<br>
+        </p>
+        <div class="social-links mt-3">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+
+      <div class='div2'>
+        <img src="/img/televisor2.png" class='pieCapacitacion'>
+      </div>
+    </div>
+
+    <div class="pie">
+      <p>© Copyright <span style='color:rgb(255, 183, 67)'>GlobalDorado.</span> Todos los Derechos Reservados.</p>
+    </div>
+
+
+
+
+</body>
+
+</html>

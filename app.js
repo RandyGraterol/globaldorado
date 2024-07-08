@@ -3,6 +3,7 @@ const userRoutes = require('./routes/userRoutes');
 const adminRoutes = require('./routes/adminRoutes'); 
 const alertRoutes = require('./routes/alertRoutes'); 
 const dotenv = require('dotenv'); 
+const session = require('express-session');
 dotenv.config();
 const express = require('express');
 const cookieParser = require('cookie-parser');
@@ -20,6 +21,11 @@ const staticOptions = {
 // Configuración de archivos estáticos
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.use(session({
+  secret: 'mi_secreto', // Clave secreta para firmar las cookies de sesión
+  resave: false,
+  saveUninitialized: false
+}));
 
 // Configuración del motor de plantillas
 app.set('view engine', 'ejs');
@@ -45,8 +51,8 @@ sequelize
     console.error('Error al conectar a la base de datos randy:', error.message);
   });
 // Routers
-app.use('/', userRoutes);
-app.use('/', adminRoutes);
+app.use('/',userRoutes);
+app.use('/',adminRoutes);
 app.use('/',alertRoutes);
 
 app.listen(port, () => {

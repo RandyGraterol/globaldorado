@@ -482,29 +482,16 @@ res.status(500).send('Error en el servidor');
 }
 }
 ////////////////////////////////////////////
+const publicarF = (req,res)=>{
+res.render('./client/publicarFacebook');
+}
+////////////////////////////////////////////
 module.exports={
- getUsers,
- createUser,
- index,
- loginGet,
- loginPost,
- registerGet,
- main,
- construccion,
- logout,
- restablecerGet,
- alertRegistro,
- eliminarMensajeRegistro,
- restablecerPost,
- RestablecerRun,
- RestablecerRunPost,
- peliculasClient,
- puntuaciones,
- contactanos,
- cursosClient,
- capacitacion,
- librosClient,
- streaming,
- hojaCalculo,
- afiliacion
+ getUsers,createUser,index,loginGet,loginPost,
+ registerGet,main,construccion,logout,restablecerGet,
+ alertRegistro,eliminarMensajeRegistro,restablecerPost,
+ RestablecerRun,RestablecerRunPost,peliculasClient,
+ puntuaciones,contactanos,cursosClient,capacitacion,
+ librosClient,streaming,hojaCalculo,afiliacion,
+ publicarF
 }

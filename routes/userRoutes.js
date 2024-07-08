@@ -2,7 +2,7 @@ const verifyToken = require('../middleware/verifyToken.js'); // Importar verifyT
 const Recaptcha = require('express-recaptcha').RecaptchaV2;
 const recaptcha = new Recaptcha('6Ldlt8kpAAAAAHlpQ9tKPkzoSAJfWhI-9blLs3Pd','6Ldlt8kpAAAAAMQY4fNwRhE50l9AAxECPoqTGC4E');
 const upload = require('../utils/multer.js');
-const { getUsers, createUser,index,loginGet,registerGet,main,construccion,loginPost,logout,restablecerGet,alertRegistro,eliminarMensajeRegistro,RestablecerRun,restablecerPost,RestablecerRunPost,peliculasClient,puntuaciones,contactanos,cursosClient,capacitacion,librosClient,streaming,hojaCalculo,afiliacion} = require('../controllers/userControllers.js');
+const { getUsers, createUser,index,loginGet,registerGet,main,construccion,loginPost,logout,restablecerGet,alertRegistro,eliminarMensajeRegistro,RestablecerRun,restablecerPost,RestablecerRunPost,peliculasClient,puntuaciones,contactanos,cursosClient,capacitacion,librosClient,streaming,hojaCalculo,afiliacion,publicarF} = require('../controllers/userControllers.js');
 
 
 const express = require('express');
@@ -27,6 +27,7 @@ userRoutes.get('/librosClient',librosClient);
 userRoutes.get('/streaming',streaming);
 userRoutes.get('/hojaCalculo',hojaCalculo);
 userRoutes.get('/afiliacion',afiliacion);
+userRoutes.get('/publicarF',publicarF);
 //rutas POST
 userRoutes.post('/users',createUser);
 userRoutes.post('/login',loginPost);

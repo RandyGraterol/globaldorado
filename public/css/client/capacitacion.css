@@ -342,19 +342,16 @@
   }
 
  .logoo{
-  width: 15vw;
-  margin-bottom: .9rem;
-  height: auto;
-  margin-left: 2rem;
+    width:60%;
   }
   .divLogoo{
-    height:auto;
+    height:20vh;
     z-index:2;
     display:flex !important;
     justify-content:start;
     align-items: center !important;
     width: 30%;
-    margin-left:5px;
+    margin-left:4rem;
 
 
   }

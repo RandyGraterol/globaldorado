@@ -32,7 +32,7 @@
    padding:1.5rem;
  }
  #navbarrr div picture img{
-  width:100%;
+  width:60%;
   min-width: 40px;
 }
 #navbarrr div picture{
@@ -75,6 +75,12 @@
 }
 
 
+#navbarrr .menu li{
+
+margin-left: 78vw;
+
+}
+
 
 
 #navbarrr #TituloI{
@@ -92,16 +98,12 @@
   text-decoration:none;    	
 }
 #navbarrr .menu li:hover .subMenu{
- display: block ;
- flex-direction: column;
- align-items: start;
- justify-content: start;
+ display:block;
  position:absolute;
  width:100vw;
- margin-left: -83vw;
+ transform: translateX(-18.5rem) translateY(14px);
  background:rgba(0,0,0,1);
  backdrop-filter:blur(10px);
- overflow-x: hidden;
 }
 
 
@@ -173,10 +175,6 @@ body:before{
 }
 
 
-.subMenu li{
-  margin-left: 3vw !important;
-}
-
 
 .footerCapacitacion{
  display: flex;
@@ -216,72 +214,6 @@ body:before{
   text-align: center;
 }
 }
-
-
-
-
-
-
-@media screen and (min-width:410px) and (max-width:500px) {
-
-  #navbarrr .menu li:hover .subMenu{
-    display: flex ;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    position:absolute;
-    width:100vw;
-    margin-left: -85vw !important;
-    background:rgba(0,0,0,1);
-    backdrop-filter:blur(10px);
-  }
-  
-  
-}
-
-
-
-
-@media screen and (min-width:500px) and (max-width:642px) {
-
-  #navbarrr .menu li:hover .subMenu{
-    display: flex ;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    position:absolute;
-    width:100vw;
-    margin-left: -84.3vw !important;
-    background:rgba(0,0,0,1);
-    backdrop-filter:blur(10px);
-  }
-  
-  
-}
-
-
-
-
-@media screen and (min-width:642px) and (max-width:767px) {
-
-  #navbarrr .menu li:hover .subMenu{
-    display: flex ;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    position:absolute;
-    width:100vw;
-    margin-left: -83.3vw !important;
-    background:rgba(0,0,0,1);
-    backdrop-filter:blur(10px);
-  }
-  
-  
-}
-
-
-
-
 
 
 @media (min-width:340) and (max-width:767) {

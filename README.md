@@ -1,2 +1,0 @@
-# globaldorado
-hard

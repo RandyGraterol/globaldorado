@@ -5,7 +5,7 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
-			background-image:url('https://static.wixstatic.com/media/e04518_4d1208e825d6497697960ee4c4303ba0~mv2.jpg/v1/crop/x_0,y_539,w_6000,h_1934/fill/w_977,h_315,al_c,q_90,enc_auto/Dise%C3%B1o%20logo%201%20(Historia%20de%20Instagram)%20(6).jpg');
+			
             
 		}
 		.texto h2{
@@ -53,10 +53,24 @@
 			align-items: center;
 			height:120vh !important;
 			gap: 5rem !important;
-			padding-bottom: 2rem;
-			
+			padding-bottom: 2rem;	
 		}
 		.pagos .img-{
-			width:60% !important;
+			width:50% !important;
 		}
+.transfondo{
+ position:relative;
+ width:100%;
+ height:auto; 
+}
+.transfondo:before{
+ position:absolute;
+ content:"";
+ width:100%;
+ height:590vh;
+ top:0;
+ left:0;
+ backdrop-filter: blur(7px);
+ background:rgba(0,0,0,.3);
+}
 }

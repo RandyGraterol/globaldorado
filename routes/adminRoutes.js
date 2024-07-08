@@ -1,7 +1,6 @@
 
-const {peliculasGet,addPeliculaGet,addCursoGet,addCursosPost,addPeliculasPost,update,updateMoviesPost,deleteMovie,updatePost,usuarios,cursosGet,updateCursosPost,deleteCurso,updateCursos,librosGet,addLibros,addLibrosPost,updateLibrosGet,updateLibrosPost,deleteLibro,usuariosGet,addUsuario,addUsuarioPost} = require('../controllers/adminControllers.js');
-
-const mensaje = 'si se puede';
+const {peliculasGet,addPeliculaGet,addCursoGet,addCursosPost,addPeliculasPost,update,updateMoviesPost,deleteMovie,updatePost,usuarios,cursosGet,updateCursosPost,deleteCurso,updateCursos,librosGet,addLibros,addLibrosPost,updateLibrosGet,updateLibrosPost,deleteLibro,usuariosGet,addUsuario,addUsuarioPost,loginAdmin,loginAdminPost,cerrarAdmin,error} = require('../controllers/adminControllers.js');
+const session = require('../middleware/session.js');
 const path = require('path');
 const express = require('express');
 const adminRoutes = express.Router();
@@ -9,34 +8,40 @@ const adminRoutes = express.Router();
 const upload = require('../utils/multer.js');
 //Randis Graterol
 //rutas GET
-adminRoutes.get('/peliculas',peliculasGet);
-adminRoutes.get('/cursos',cursosGet);
-adminRoutes.get('/libros',librosGet);
-adminRoutes.get('/usuarios',usuariosGet);
+adminRoutes.get('/peliculas',session,peliculasGet);
+adminRoutes.get('/cursos',session,cursosGet);
+adminRoutes.get('/libros',session,librosGet);
+adminRoutes.get('/usuarios',session,usuariosGet);
 
 //Agregar datos al servidor 
-adminRoutes.get('/addPeliculaGet',addPeliculaGet);
-adminRoutes.get('/addCursosGet',addCursoGet);
-adminRoutes.get('/addLibros',addLibros);
-adminRoutes.get('/addUsuario',addUsuario);
+adminRoutes.get('/addPeliculaGet',session,addPeliculaGet);
+adminRoutes.get('/addCursosGet',session,addCursoGet);
+adminRoutes.get('/addLibros',session,addLibros);
+adminRoutes.get('/addUsuario',session,addUsuario);
 
-adminRoutes.get('/update/:id',update);
-adminRoutes.get('/updateLibros/:id',updateLibrosGet);
-adminRoutes.get('/updateCursos/:id',updateCursos);
-adminRoutes.get('/usuarios',usuarios);
+adminRoutes.get('/update/:id',session,update);
+adminRoutes.get('/updateLibros/:id',session,updateLibrosGet);
+adminRoutes.get('/updateCursos/:id',session,updateCursos);
+adminRoutes.get('/usuarios',session,usuarios);
+
+adminRoutes.get('/admin',loginAdmin);
+adminRoutes.get('/cerrarAdmin',cerrarAdmin);
+adminRoutes.get('/error',error);
 //rutas Post
 
-adminRoutes.post('/addPeliculas',upload.single('img'),addPeliculasPost);
-adminRoutes.post('/addCursos',upload.single('img'),addCursosPost);
-adminRoutes.post('/addLibros',upload.single('img'),addLibrosPost);
-adminRoutes.post('/addUsuario',upload.single('img'),addUsuarioPost);
+adminRoutes.post('/addPeliculas',session,upload.single('img'),addPeliculasPost);
+adminRoutes.post('/addCursos',session,upload.single('img'),addCursosPost);
+adminRoutes.post('/addLibros',session,upload.single('img'),addLibrosPost);
+adminRoutes.post('/addUsuario',session,upload.single('img'),addUsuarioPost);
 
-adminRoutes.post('/updateLibros/:id',upload.single('img'),updateLibrosPost);
-adminRoutes.post('/update/:id',upload.single('img'),updateMoviesPost);
-adminRoutes.post('/updateCursos/:id',upload.single('img'),updateCursosPost);
+adminRoutes.post('/updateLibros/:id',session,upload.single('img'),updateLibrosPost);
+adminRoutes.post('/update/:id',session,upload.single('img'),updateMoviesPost);
+adminRoutes.post('/updateCursos/:id',session,upload.single('img'),updateCursosPost);
 
 adminRoutes.post('/delete',deleteMovie);
 adminRoutes.post('/deleteCurso',deleteCurso);
 adminRoutes.post('/deleteLibros',deleteLibro);
+
+adminRoutes.post('/loginAdminPost',loginAdminPost);
 
 module.exports=adminRoutes;

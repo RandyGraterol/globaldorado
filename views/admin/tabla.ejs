@@ -9,14 +9,13 @@
         <% if(tabla === "Usuarios") { %>
         <tr>
             <th>#</th>
-            <th>Perfil</th>
             <th>Nombre</th>
             <th>Telefono</th>
             <th>Correo</th>
             <th>Contraseña</th>
             <th>Hora</th>
             <th>Fecha</th>
-            <th><a href="<%=endPoinst%>" class='aAdd' title="Agregar"><img src="/icon/add.png" class='imgAdd'></a></th>
+            <th class="thB"><a href="<%=endPoinst%>" class='aAdd' title="Agregar"><img src="/icon/add.png" class='imgAdd'></a></th>
         </tr>
          <%} else {%>
          <tr>
@@ -28,7 +27,7 @@
             <th>Categoria</th>
             <th>Hora</th>
             <th>Fecha</th>
-            <th><a href="<%=endPoinst%>" class='aAdd' title="Agregar"><img src="/icon/add.png" class='imgAdd'></a></th>
+            <th class="thB"><a href="<%=endPoinst%>" class='aAdd' title="Agregar"><img src="/icon/add.png" class='imgAdd'></a></th>
         </tr>
         <% } %>
     </thead>
@@ -39,7 +38,6 @@
       <% if(tabla === "Usuarios") { %>
       <tr>
           <td class='td'><%= pelicula.id %></td>
-          <td class='td'><img src='<%= pelicula.perfil%>' class='imgTable'></td> 
           <td class='td'><%= pelicula.nombre %></td>
           <td class='td'><div class='descripcion'><%= pelicula.telefono%></div></td>
           <td class='td'><%= pelicula.correo%></td>
@@ -47,10 +45,14 @@
           <td class='td'><%= pelicula.createdAt.toString().split(' ')[4]%></td>
           <td class='td'><%= pelicula.createdAt.toString().split(' ')[2]%>-<%= pelicula.createdAt.toString().split(' ')[1]%>-<%= pelicula.createdAt.toString().split(' ')[3]%></td>
           <td class="icon td">
-              <a href="<%=update%><%=pelicula.id%>" title='Actualizar'><img src="icon/update.png" width="30"></a>
 
-              <div class="borrar" style="cursor: pointer;">
-                 <img src="icon/delete.png" width="30" class="delete" data-id="<%= pelicula.id%>" title='Eliminar' data-ruta='<%=eliminar%>' data-mensaje='<%=mensaje%>'>   
+            <div>
+              <a href="<%=update%><%=pelicula.id%>" class='updateU' title='Actualizar'><img src="icon/update.png"></a>
+            </div>
+            
+
+              <div class="borrar" style="cursor: pointer">
+                 <img src="icon/delete.png" class="delete" data-id="<%= pelicula.id%>" title='Eliminar' data-ruta='<%=eliminar%>' data-mensaje='<%=mensaje%>'>   
              </div>
 
          </td>
@@ -65,8 +67,12 @@
           <td class='td'><%= pelicula.categoria%></td>
           <td class='td'><%= pelicula.createdAt.toString().split(' ')[4]%></td>
           <td class='td'><%= pelicula.createdAt.toString().split(' ')[2]%>-<%= pelicula.createdAt.toString().split(' ')[1]%>-<%= pelicula.createdAt.toString().split(' ')[3]%></td>
-          <td class="icon td">
-              <a href="<%=update%><%=pelicula.id%>" title='Actualizar'><img src="icon/update.png" width="30"></a>
+          <td class="icon2 td">
+
+            <div>
+               <a href="<%=update%><%=pelicula.id%>" class='updateU' title='Actualizar'><img src="icon/update.png" width="30"></a>
+            </div>
+             
 
               <div class="borrar" style="cursor: pointer;">
                  <img src="icon/delete.png" width="30" class="delete" data-id="<%= pelicula.id%>" title='Eliminar' data-ruta='<%=eliminar%>' data-mensaje='<%=mensaje%>'>   

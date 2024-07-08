@@ -58,7 +58,7 @@
    text-align: justify-all;
    padding:2rem;
    color: white;
-   font-size: 1.8vw;
+   font-size: 1.3vw;
    transition: color 1s;
    width: 90%;
    margin: auto;
@@ -99,7 +99,6 @@
   height: 65%;
   color:white;
   background:rgb(0,0,0);
-  padding: 10px;
   }
   .pie p{
     font-size:1.3rem !important;
@@ -292,19 +291,16 @@
   	color: white;
   }
   .logoo{
-    width: 15vw;
-    margin-bottom: .9rem;
-    height: auto;
-    margin-left: 2rem;
+    width:60%;
   }
   .divLogoo{
-    height:auto;
+    height:20vh;
   	z-index:2;
   	display:flex !important;
-  	justify-content:center;
+  	justify-content:start;
   	align-items: center !important;
-  	width: 15%;
-  	margin-left:5px;
+  	width: 30%;
+  	margin-left:4rem;
 
 
   }
@@ -411,22 +407,10 @@
     backdrop-filter:blur(10px);
     border-radius:22px;
     width:30%;
-    min-width: 180px;
     height:12vh;
     cursor: pointer;
     transition:transform 1s;
   }
-
-
-  @media screen and (max-width:767px) {
-
-    .botonIcon{
-    min-width: none !important;
-    }
-
-  }
-
-
   .botonIcon:hover{
    transform:translateY(-7px);
    background:transparent;
@@ -436,14 +420,12 @@
    box-shadow:10px 10px 70px rgb(255, 183, 67);
   }
   .botonIcon img{
-    width:3rem;
+    width:10%;
     height:auto;
-    margin-left: .8rem !important;
   }
   .botonIcon span{
     color: white;
     font-size: 1.6rem;
-    margin-right: .5rem;
   }
   .oculto{
     width:4%;
