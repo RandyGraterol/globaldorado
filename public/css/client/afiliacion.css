@@ -308,7 +308,7 @@
 .ulMenu li a{
  color: white;
  text-decoration: none;
- font-size:1.3rem;
+ font-size:2vw;
  font-family:cursive;
 }
 .divForm{
@@ -425,13 +425,13 @@ h2{
 .transfondo{
  position:relative;
  width:100%;
- height:auto; 
+ height:200vh; 
 }
 .transfondo:before{
  position:absolute;
  content:"";
  width:100%;
- height:480vh;
+ height:auto;
  top:0;
  left:0;
  backdrop-filter: blur(7px);
@@ -441,7 +441,7 @@ h2{
   display:flex;
   justify-content: center;
   align-items: center;
-  gap:5rem;
+  gap:9.3vw;
   width:100%;
   height:100%;
 
@@ -453,8 +453,8 @@ h2{
   padding:2rem;
 }
 .imagen{
-  width: 100%;
-  height:150vh;
+  width: 100vw;
+  height:70vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -469,6 +469,7 @@ h2{
   justify-content: center;
   align-items: center;
   gap:2rem;
+  max-width: 100vw;
 }
 .texto h2{
   font-size: 2rem;
@@ -527,15 +528,15 @@ h2{
   height:70vh;
 }
 .comprobante div picture {
-  width:40%;
+  width:auto;
 }
 .comprobante div picture img{
-  width:100%;
+  width:20vw;
 }
 
 .img-{
-  width:17%;
-  height:35vh;
+  width:18vw;
+  height:18vw;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

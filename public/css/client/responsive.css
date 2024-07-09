@@ -28,6 +28,7 @@
 	background:rgba(0,0,0,.7);
 	backdrop-filter: blur(10px);
 	padding:1.5rem;
+  height: 12vh;
   }
   
   .copyright
@@ -42,7 +43,7 @@
   #navbarrr div picture{
   display:flex;
   justify-content:center;
-  width:70%;
+  width:100%;
 
   }
    #navbarrr div h1{
@@ -62,8 +63,12 @@
    #navbarrr div{
    	display: flex;
    	justify-content:start;
-    width: 50%;
+    width: 15%;
   }
+
+
+  
+
 
    #navbarrr ul li picture{
    display:flex;
@@ -80,11 +85,13 @@
   }
   #navbarrr #TituloI{
   	position: absolute;
+    max-width: 20vh;
   }
   #navbarrr .subMenu{
   	color: white;
   	display:none;
   	list-style: none;
+    margin-top: 2vh;
   }
   #navbarrr .subMenu li a{
   		display: block;
@@ -139,7 +146,7 @@
 
 
 
-@media screen and (min-width:410px) and (max-width:500px) {
+@media screen and (min-width:280px) and (max-width:500px) {
 
   #navbarrr .menu li:hover .subMenu{
     display: flex ;
@@ -148,7 +155,7 @@
     justify-content: start;
     position:absolute;
     width:100vw;
-    margin-left: -87vw !important;
+    margin-left: calc(-100vw + 64px) !important;
     background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }
@@ -166,7 +173,7 @@
     justify-content: start;
     position:absolute;
     width:100vw;
-    margin-left: -88.5vw !important;
+    margin-left: calc(-100vw + 64px) !important;
     background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }
@@ -187,7 +194,7 @@
     justify-content: start;
     position:absolute;
     width:100vw;
-    margin-left: -91vw !important;
+    margin-left: calc(-100vw + 64px) !important;
     background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+
+
+
+
 body {
     position: relative;
     background-image: url('/img/logoGlobal.jpeg') !important;
@@ -48,7 +52,7 @@ h1 {
 }
 .tablee {
     position:absolute;
-    top:7.9rem;
+    top:12vh;
     overflow-x: auto;
     width: 100%;
     height: auto;
@@ -78,7 +82,7 @@ td:nth-child(1) {
 th,
 td {
     height: 10vh;
-    font-size:1.2rem !important;
+    font-size: 2.2vw !important;
     border-bottom: 1px solid white;
 }
 
@@ -127,17 +131,39 @@ td:nth-child(2) {
     gap: 1rem;
 }
 .borrar{
-    width:28% !important;
-    height:7vh !important;
+    width: 100% !important;
+    height:auto !important;
 }
 .borrar img{
-    width: 100% !important;
-    height:100% !important;
+    width:  40% !important;
+    height:auto !important;
 }
 .updateU img{
-    width:100% !important;
-    height:7vh !important;
+    width: 40% !important;
+    height:auto !important;
 }
+
+
+@media screen and (max-width:767px) {
+    
+
+
+    .borrar img{
+        width:  50% !important;
+        height:auto !important;
+    }
+    .updateU img{
+        width: 50% !important;
+        height:auto !important;
+    }
+    
+
+
+}
+
+
+
+
 .navMenu .ulMenu li .aMenu {
     text-decoration: none;
     text-align: center;
@@ -223,10 +249,11 @@ td:nth-child(2) {
 }
 .icon {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: .1rem !important;
-    height: 100%;
+    height: 100% !important;
 }
 .icon2 {
     display: flex;
@@ -258,7 +285,22 @@ td:nth-child(2) {
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
 /*--------------------------------------------------------*/
-@media only screen and (max-width:720px) {
+
+
+
+@media  screen and (max-width:720px) {
+
+
+    th{
+        font-size: 2.3vw !important;
+    }
+
+}
+
+
+
+
+    @media only screen and (max-width:720px) {
     .navMenu {
         height: 13vh;
         width: 100%;
@@ -272,7 +314,7 @@ td:nth-child(2) {
     }
 
     .aAdd {
-        width: 2.5rem;
+        width: 60% !important;
     }
 
     .imgTable {
@@ -317,7 +359,7 @@ td:nth-child(2) {
     }
 
     th:last-child {
-        width: 50px;
+        width: 100%;
     }
 
     .tablee {

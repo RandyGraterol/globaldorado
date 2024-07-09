@@ -138,6 +138,7 @@
 			justify-content: center;
 			align-items: center !important;
 			width:15%;
+			min-width: 80px;
 			height:16vh;
 		}
 
@@ -262,6 +263,22 @@
 			margin: 1rem auto;
 			border-radius: 7px;
 			text-align: center;
+		}
+
+		@media screen and (max-width:767px) {
+			
+			
+		.fileUrl div {
+			background: rgb(255, 183, 67);
+			width: 43%;
+			min-width: 82px;
+			padding: .2rem;
+			margin: 1rem auto;
+			border-radius: 7px;
+			text-align: center;
+		}
+
+
 		}
 
 		.principall .peliculaDiv .descripcion-nombre .fileUrl div .a:hover {

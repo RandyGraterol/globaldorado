@@ -89,7 +89,7 @@ width:20vw;
 .container .boton .botonIcon{
   width:100%;
   min-width: 100px !important;
-  height:9vh;
+  height:auto;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +122,7 @@ width:20vw;
   background:rgba(0,0,0,.7);
   backdrop-filter: blur(10px);
   padding:1.5rem;
+  height: 12vh;
   }
 
 
@@ -154,7 +155,8 @@ width:20vw;
    #navbarrr div{
     display: flex;
     justify-content:start;
-    width: 50%;
+    width: 15%;
+    min-width: 80px;
   }
 
    #navbarrr ul li picture{
@@ -163,10 +165,12 @@ width:20vw;
    width:15%;
   }
   #navbarrr .menu{
+  position:relative;
   z-index:1;
-  left:17rem;
+  margin-left: auto;
+  margin-right:1px;
   list-style:none;
-  margin-left: 80vw;
+  transform:translateY(10px);
   }
   #navbarrr #TituloI{
     position: absolute;
@@ -175,6 +179,7 @@ width:20vw;
     color: white;
     display:none;
     list-style: none;
+    margin-top: 2vh;
   }
   #navbarrr .subMenu li{
    margin-left: 1.5rem;
@@ -267,7 +272,7 @@ width:20vw;
 }
 
 
-@media screen and (min-width:410px) and (max-width:500px) {
+@media screen and (min-width:280px) and (max-width:500px) {
 
   #navbarrr .menu li:hover .subMenu{
     display: flex ;
@@ -276,7 +281,7 @@ width:20vw;
     justify-content: start;
     position:absolute;
     width:100vw;
-    margin-left: -85vw !important;
+    margin-left: calc(-100vw + 64px) !important;
     background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }
@@ -296,7 +301,7 @@ width:20vw;
     justify-content: start;
     position:absolute;
     width:100vw;
-    margin-left: -84.3vw !important;
+    margin-left: calc(-100vw + 64px) !important;
     background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }
@@ -316,7 +321,7 @@ width:20vw;
     justify-content: start;
     position:absolute;
     width:100vw;
-    margin-left: -83.3vw !important;
+    margin-left: calc(-100vw + 64px) !important;
     background:rgba(0,0,0,1);
     backdrop-filter:blur(10px);
   }
